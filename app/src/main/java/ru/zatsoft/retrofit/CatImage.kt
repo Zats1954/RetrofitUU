@@ -1,3 +1,3 @@
 package ru.zatsoft.retrofit
 
-data class CatImage(   val fileSizeBytes: Int,     val url: String)
+data class CatImage(   val id: String,  val url: String, val width: Int, val height: Int)

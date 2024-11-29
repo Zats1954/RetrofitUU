@@ -5,6 +5,6 @@ import retrofit2.http.GET
 import ru.zatsoft.retrofit.CatImage
 
 interface ApiInterface {
-    @GET("woof.json?ref=apilist.fun")
-    suspend fun getCatImage(): Response<CatImage>
+    @GET("v1/images/search")
+    suspend fun getCatImage(): Response<List<CatImage>>
 }

@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 return@launch
             }
             withContext(Dispatchers.Main) {
-                Glide.with(binding.image).load(response.body()!!.url)
+                Glide.with(binding.image).load(response.body()!!.get(0).url)
                     .override(200, 200)
                     .placeholder(R.drawable.ic_o_24dp)
                     .error(R.drawable.ic_o_24dp)
