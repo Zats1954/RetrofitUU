@@ -2,14 +2,9 @@ package ru.zatsoft.retrofit.utils
 
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
-import ru.zatsoft.retrofit.models.CurrentWeather
+import ru.zatsoft.retrofit.CatImage
 
 interface ApiInterface {
-    @GET("weather?")
-    suspend fun getCurrentWeather(
-        @Query("q") city:String,
-        @Query("units") units:String,
-        @Query("appid") appid:String
-    ): Response<CurrentWeather>
+    @GET("woof.json?ref=apilist.fun")
+    suspend fun getCatImage(): Response<CatImage>
 }

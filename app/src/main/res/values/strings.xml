@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">Retrofit</string>
-    <string name="button">Получить данные</string>
-    <string name="title_text">Погода в городах</string>
-    <string name="hint_text">Город</string>
+    <string name="button">Загрузить</string>
+    <string name="title_text">Загрузчик картинок</string>
     <string name="exit">Выход</string>
     <string name="api_key">f00c38e0279b7bc85480c3fe775d518c</string>
-    <string name="gorod">Город</string>
-    <string name="temperature">Температура</string>
 </resources>
